@@ -5,49 +5,48 @@ import { Toaster } from 'react-hot-toast';
 import Home from './Pages/Home';
 import Success from './Pages/Success';
 import Notfound from './Pages/Notfound';
+import ResizeObserver from 'resize-observer-polyfill'; // Add this if using the polyfill
 
 function App() {
   const appContainerRef = useRef(null);
 
   useEffect(() => {
-    const resizeObserver = new ResizeObserver(() => {
-      // Throttle the callback
-      if (!window.resizeTimeout) {
-        window.resizeTimeout = setTimeout(() => {
-          console.log("Element resized!");
-          window.resizeTimeout = null;
-        }, 200); // Adjust throttle time as necessary
+    const appContainer = appContainerRef.current;
+    if (!appContainer) return;
+
+    // Initialize the ResizeObserver
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        const { width, height } = entry.contentRect;
+        console.log(`Size changed to ${width}x${height}`);
       }
     });
 
-    if (appContainerRef.current) {
-      resizeObserver.observe(appContainerRef.current);
-    }
+    // Observe the app container
+    resizeObserver.observe(appContainer);
 
+    // Cleanup on component unmount
     return () => {
-      if (appContainerRef.current) {
-        resizeObserver.disconnect();
-      }
+      resizeObserver.disconnect();
     };
   }, []);
 
   return (
-    <>
-      <Router>
-        <div ref={appContainerRef}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/success" element={<Success />} />
-            <Route path="*" element={<Notfound />} />
-          </Routes>
-        </div>
-        <Toaster />
-      </Router>
-    </>
+    <Router>
+      <div ref={appContainerRef} className="app-container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="*" element={<Notfound />} />
+        </Routes>
+      </div>
+      <Toaster />
+    </Router>
   );
 }
 
 export default App;
+
 
 
 
