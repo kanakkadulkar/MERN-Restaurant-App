@@ -128,7 +128,7 @@ nav svg {
     display: flex;
     flex-direction: column;
     top: 67px;
-    background: #fff;
+    background: #050505;
     width: auto;
     left: 0;
     padding: 15px 7.5px;
@@ -559,88 +559,97 @@ nav svg {
 }
 /*********************************************************************************************************************/
 
-/* TEAM COMPONENT STYLING */
+/* review STYLING */
 /*********************************************************************************************************************/
-.team {
-  display: flex;
-  min-height: 60vh;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+.review-container {
+  background-color: #000;
+  color: #f1c40f;
+  padding: 2rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%; /* To make the section smaller */
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.team .container {
-  max-width: 1500px;
-  min-width: 1500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.team .container .heading_section {
+
+.review-header {
   text-align: center;
-  margin-bottom: 12px;
-}
-.team .container .heading_section p {
-  color: #333;
-  font-size: 18px;
-  font-weight: 300;
   margin-bottom: 1.5rem;
 }
-.team .container .team_container {
+
+.review-header h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.review-header p {
+  color: #f1c40f;
+}
+
+.review-cards-wrapper {
   display: flex;
+  justify-content: space-between;
+  gap: 1rem; /* Space between each review card */
   flex-wrap: wrap;
-  width: 100%;
 }
-.team .container .team_container .card {
-  width: 25%;
-  padding: 20px;
-  margin-bottom: 12px;
+
+.review-card {
+  background-color: #1c1c1c;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #fff;
+  flex: 1 1 30%; /* Each card takes 30% of the space */
+  transition: opacity 1s ease-in-out;
+  box-sizing: border-box;
+}
+
+.review-card .user-info {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-.team .container .team_container .card img {
-  width: 175px;
   margin-bottom: 1rem;
 }
-.team .container .team_container .card h3 {
-  font-size: 1.5rem;
+
+.review-card .user-info .user-name {
+  font-weight: bold;
 }
-.team .container .team_container .card p {
-  font-size: 18px;
-  font-weight: 300;
-  color: #333;
+
+.stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 1rem;
 }
-@media (max-width: 1520px) {
-  .team .container {
-    min-width: 100%;
+
+.star {
+  width: 20px;
+  height: 20px;
+  fill: #ddd;
+}
+
+.star.filled {
+  fill: #f1c40f;
+}
+
+.review-card .description {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.review-container .review-card:hover {
+  background-color: #333;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .review-cards-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .review-card {
+    flex: 1 1 100%; /* On smaller screens, each card will take full width */
   }
 }
-@media (max-width: 1050px) {
-  .team .container .team_container .card img {
-    width: 135px;
-  }
-}
-@media (max-width: 910px) {
-  .team .container .team_container .card h3 {
-    font-size: 1.3rem;
-  }
-}
-@media (max-width: 810px) {
-  .team .container .team_container .card {
-    width: 50%;
-  }
-  .team .container .team_container .card img {
-    width: 220px;
-  }
-}
-@media (max-width: 550px) {
-  .team .container .team_container .card {
-    width: 100%;
-  }
-  .team .container .team_container .card img {
-    width: 150px;
-  }
-}
+
 /*********************************************************************************************************************/
 
 /* WHOAREWE COMPONENT STYLING */

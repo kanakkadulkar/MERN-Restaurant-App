@@ -1,25 +1,6 @@
 {
     "data": [
-        {"ourQualities" : [
-            {
-                "id": 1,
-                "image": "./quality_food.svg",
-                "title": "QUALITY FOOD",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
-            },
-            {
-                "id": 2,
-                "image": "./super_taste.svg",
-                "title": "SUPER TASTE",
-                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing sit amet elit. Sit voluptates quaerat pariatur." 
-            },
-            {
-                "id": 3,
-                "image": "./fast_delivery.svg",
-                "title": "FAST DELIVERY",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
-            }
-        ],
+        {
         "dishes": [
             {
                 "id": 1,
@@ -69,78 +50,8 @@
                 "title": "GRILLED FISH",
                 "category": "Dinner"
             }
-        ],
-        "tiffin": [
-            {
-                "id": 1,
-                "image": "./team_member_1.png",
-                "name": "JOHNATHAN TYLER",
-                "designation": "Founder & Head Chef"
-            },
-            {
-                "id": 2,
-                "image": "./team_member_2.png",
-                "name": "WADE WARREN",
-                "designation": "Sous Chef"
-            },
-            {
-                "id": 3,
-                "image": "./team_member_3.png",
-                "name": "JHON DOE",
-                "designation": "Fast Food Chef"
-            },
-            {
-                "id": 4,
-                "image": "./team_member_4.png",
-                "name": "ALEX COAL",
-                "designation": "Senior Chef"
-            }
-        ],
-        "testimonials": [
-            {
-                "id": 1,
-                "image": "./review1.png",
-                "description": "Morbi nulla nec dui lacus, in. Libero in pretium metus massa. Sodales dignissim vitae mauris varius faucibus. Eleifend dui, non laoreet ac luctus facilisis diam. Enim scelerisque vel at id viverra tellus.",
-                "rating": 4,
-                "userName": "Jane Cooper"
-            },
-            {
-                "id": 2,
-                "image": "./review2.png",
-                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
-                "rating": 4.5,
-                "userName": "Esther Howard"
-            },
-            {
-                "id": 3,
-                "image": "./review3.png",
-                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
-                "rating": 5,
-                "userName": "Guy Hawkins"
-            }
-        ],
-        "who_we_are": [
-            {
-                "id": 1,
-                "number": "14",
-                "title": "Restaurants"
-            },
-            {
-                "id": 2,
-                "number": "20",
-                "title": "Chef In Kitchen"
-            },
-            {
-                "id": 3,
-                "number": "08",
-                "title": "Years Of Experience"
-            },
-            {
-                "id": 4,
-                "number": "200",
-                "title": "Food Dishes"
-            }
-        ],
+        ]
+       ,
         "navbarLinks": [
             {
                 "id": 1,
@@ -172,8 +83,49 @@
                 "title": "RESERVATION",
                 "link": "reservation"
             }
-        ]
-    
+        ],
+        "testimonials": [
+            {
+                "userName": "Eleena Gomes",
+                "rating": 5,
+                "description": "One of the best food at affordable prices. The ambience is really comfortable. Staff is friendly. Food tastes amazing. The menu is refreshing. It's amazing to find such a beautiful place with wonderful food which doesn't dig a hole in your pocket. Loved it. Highly recommended"
+              },
+              {
+                "userName": "Prathamesh Gharat",
+                "rating": 5,
+                "description": "The dishes were cooked perfectly. Tried a dish called “pan fried noodles”, the noodles were a bit crispy as expected, crunchy red and yellow capsicum (again perfectly cooked) and to top it all off the sauce was a perfect combination of spicy, sweet, sour and garlicky!"
+              },
+              {
+                "userName": "Lawrence Martis",
+                "rating": 5,
+                "description": "We loved their hospitality. Food was super tasty my whole family loved. Owner was so humble and supportive with our arrangements."
+              },
+              {
+                "userName": "Preety Prema Anand Shrivastav",
+                "rating": 5,
+                "description": "Every bite was delicious!!! Bheja kheema fry 10/10 Suramai slice 10/10 Ambiance 10/10 The lady owner was very kind and very helpful with all the item detail!! It’s a must visit again and again!!!"
+              },
+              {
+                "userName": "Chef Pradnyavant Madhale",
+                "rating": 5,
+                "description": "APRATIM is seriously APRATIM. This place deserve APRATIM comment's, lots of love and likes. As I belong to Konkan I loved non vegetarian food. So I tried butter garlic prawns 🦐 and Goan Chicken 🐔 curry. Both were hard, fantastic, mouth melting and delicious 😋. They have good ambience and positive vibes about good food 🍲. F&B staff is so polite and cooperative. Pocket friendly place for foodie. I'll visit again 🥰."
+              },
+              {
+                "userName": "Judill Gonsalves",
+                "rating": 5,
+                "description": "This place has been around for a while now but never really entered cuz it looks like a small Cafe but it serves everything from soups to North Indian dishes to thalis. Read good reviews about this place so went and checked for myself and I wasn't disappointed. We ordered green chicken tandoori and mutton lajawab. Both meat pieces were soft, tender and cooked very well. It was simply Lip smackingly delicious. This cozy little place is true to its name. Apratim indeed! Will definitely go there again."
+              },
+              {
+                "userName": "Harish Dixit",
+                "rating": 5,
+                "description": "Truly Apratim. All dishes are better than another. Highly recommend the Basil-Pepper Chicken and Butter-Garlic Squid. Service is top notch as well."
+              },
+              {
+                "userName": "Rakesh Sule",
+                "rating": 5,
+                "description": "Cool ambience... Amazing food. Specially seafood - fresh and delicious. Must visit place."
+              }
+      ]
     } 
     ]
 }
