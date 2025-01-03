@@ -17,7 +17,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://mern-restaurant-app-backend-1.onrender.com/api/reservation", // Backend route
+        "https://mern-restaurant-app-backend-1.onrender.com", // Backend route
         { firstName, lastName, email, phone, date, time },
         {
           headers: { "Content-Type": "application/json" },
